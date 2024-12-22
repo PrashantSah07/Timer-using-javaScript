@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-img1">
+
+    <div class="hidenavbar">
+        <div class="switch">
+            <p id="Stpwatch">Stopwatch</p>
+            <p id="Timer">Timer</p>
+        </div>
+        <div class="navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="timers">
+
+        <div class="clock">
+            <div>
+                <p id="hour">
+                    <span></span>:
+                    <span></span>:
+                    <span></span>
+                </p>
+                <p id="date"></p>
+            </div>
+        </div>
+
+        <div class="stopwatch">
+            <h1>Stopwatch</h1>
+            <div>
+                <p id="stopWcount">
+                    <span>00</span>:
+                    <span>00</span>.
+                    <span>00</span>
+                </p>
+                <button id="stopWBtn">
+                    <svg id="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19.376 12.4161L8.77735 19.4818C8.54759 19.635 8.23715 19.5729 8.08397 19.3432C8.02922 19.261 8 19.1645 8 19.0658V4.93433C8 4.65818 8.22386 4.43433 8.5 4.43433C8.59871 4.43433 8.69522 4.46355 8.77735 4.5183L19.376 11.584C19.6057 11.7372 19.6678 12.0477 19.5146 12.2774C19.478 12.3323 19.4309 12.3795 19.376 12.4161Z">
+                        </path>
+                    </svg>
+                    <svg id="pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 3H8V21H6V3ZM16 3H18V21H16V3Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="timer">
+            <div class="set-timerInput">
+                <h1>Timer</h1>
+                <input type="text" name="" id="userInput" placeholder="Set Time">
+            </div>
+            <div>
+                <p id="timerCount">
+                    <span>00</span>:
+                    <span>00</span>.
+                    <span>00</span>
+                </p>
+                <button id="tmrBtn">
+                    <svg id="play2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19.376 12.4161L8.77735 19.4818C8.54759 19.635 8.23715 19.5729 8.08397 19.3432C8.02922 19.261 8 19.1645 8 19.0658V4.93433C8 4.65818 8.22386 4.43433 8.5 4.43433C8.59871 4.43433 8.69522 4.46355 8.77735 4.5183L19.376 11.584C19.6057 11.7372 19.6678 12.0477 19.5146 12.2774C19.478 12.3323 19.4309 12.3795 19.376 12.4161Z">
+                        </path>
+                    </svg>
+                    <svg id="pause2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 3H8V21H6V3ZM16 3H18V21H16V3Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

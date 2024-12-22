@@ -1,0 +1,499 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.switch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(240, 248, 255, 0.325);
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    display: none;
+    cursor: pointer;
+}
+
+.switch p {
+    text-align: center;
+
+}
+
+.switch p:hover {
+    color: rgb(253, 163, 163);
+    transition: 0..2s;
+}
+
+.switch p:first-child {
+    padding-bottom: 2px;
+    border: 0px solid black;
+    border-bottom-width: 1px;
+}
+
+.navbar {
+    border: 2px solid white;
+    display: flex;
+    width: 32px;
+    padding: 0px 4px;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+}
+
+
+.bg-img1 {
+    background-image: url(geranimo-a2zdgkDzFo8-unsplash.jpg);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+.timers {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timers h1 {
+    font-size: 35px;
+}
+
+.timers .clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 40px;
+}
+
+#date {
+    padding-left: 40px;
+}
+
+#hour {
+    display: flex;
+}
+
+#hour span {
+    width: 200px;
+}
+
+.clock p:first-child {
+    text-align: center;
+    font-size: 150px;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    display: none;
+}
+
+.stopwatch div {
+    display: flex;
+    flex-direction: column;
+    font-size: 140px;
+    gap: 50px;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.stopwatch button {
+    padding: 6px 30px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 87, 87);
+    width: 100px;
+}
+
+.stopwatch p {
+    display: flex;
+    justify-content: center;
+}
+
+#stopWcount {
+    display: flex;
+    gap: 10px;
+}
+
+#stopWcount span {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(215, 233, 249, 0.29);
+    border-radius: 20px;
+}
+
+#pause {
+    display: none;
+}
+
+#pause2 {
+    display: none;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    font-size: 140px;
+    display: none;
+}
+
+.timer #timerCount {
+    display: flex;
+    gap: 10px;
+}
+
+#timerCount span {
+    width: 250px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(215, 233, 249, 0.29);
+    border-radius: 20px;
+}
+
+.timer button {
+    padding: 6px 30px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 87, 87);
+    width: 100px;
+}
+
+
+.timer .set-timerInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.set-timerInput input {
+    border: 2px solid red;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0 10px 0 10px;
+    position: absolute;
+    right: 80px;
+}
+
+.timer h1 {
+    text-align: center;
+}
+
+.timer div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:1200px) {
+    .switch {
+        top: 70px;
+        right: 47px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    #stopWcount span {
+        width: 215px;
+    }
+
+    #stopWcount {
+        gap: 5px;
+    }
+
+    .stopwatch div {
+        font-size: 120px;
+    }
+
+    #timerCount span {
+        width: 215px;
+    }
+
+    .timer #timerCount {
+        gap: 5px;
+    }
+
+    .timer {
+        font-size: 120px;
+    }
+
+    .clock p:first-child {
+        font-size: 120px;
+    }
+
+    .timers .clock {
+        font-size: 35px;
+    }
+
+    #hour span {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width:930px) {
+    body {
+        height: 90vh;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    #hour span {
+        width: 155px;
+    }
+
+    .clock p:first-child {
+        font-size: 95px;
+    }
+
+    .set-timerInput input {
+        position: absolute;
+        right: 120px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    #stopWcount span {
+        width: 165px;
+    }
+
+    .stopwatch div {
+        font-size: 85px;
+    }
+
+    .stopwatch button {
+        padding: 3px 21px;
+        width: 72px;
+    }
+
+    #timerCount span {
+        width: 165px;
+    }
+
+    .timer {
+        font-size: 85px;
+    }
+
+    .timer button {
+        padding: 3px 21px;
+        width: 72px;
+    }
+
+    .set-timerInput input {
+        right: 80px;
+    }
+
+    #hour span {
+        width: 130px;
+    }
+
+    #date {
+        padding-left: 30px;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+    .timer .set-timerInput {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .set-timerInput input {
+        position: static;
+    }
+
+    .switch {
+        top: 30px;
+        right: 88px;
+    }
+
+    .timers {
+        margin-top: 90px;
+    }
+
+    body {
+        height: 87vh;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    #stopWcount span {
+        width: 135px;
+    }
+
+    .stopwatch div {
+        font-size: 75px;
+    }
+
+    #timerCount span {
+        width: 135px;
+    }
+
+    .timer {
+        font-size: 75px;
+    }
+
+    .timer {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .clock p:first-child {
+        font-size: 80px;
+    }
+
+    #hour span {
+        width: 105px;
+    }
+
+    #date {
+        padding-left: 20px;
+    }
+
+    .timers .clock {
+        font-size: 23px;
+    }
+
+    #stopWcount span {
+        width: 110px;
+    }
+
+    .stopwatch div {
+        font-size: 60px;
+    }
+
+    #timerCount span {
+        width: 110px;
+    }
+
+    .timer {
+        font-size: 60px;
+    }
+
+    .bg-img1 {
+        background-position: center;
+    }
+
+}
+
+@media only screen and (max-width:415px) {
+    #hour span {
+        width: 95px;
+    }
+
+    .timers .clock {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+
+    .timers {
+        align-items: flex-start;
+    }
+
+    #date {
+        padding-left: 15px;
+    }
+
+    #stopWcount span {
+        width: 90px;
+    }
+
+    .stopwatch div {
+        font-size: 45px;
+    }
+
+    .stopwatch {
+        width: 100%;
+    }
+
+    #timerCount span {
+        width: 90px;
+    }
+
+    .timer {
+        font-size: 45px;
+        width: 100%;
+    }
+
+    .navbar {
+        top: 20px;
+        right: 30px;
+    }
+
+    .switch {
+        top: 20px;
+        right: 75px;
+    }
+}
+
+
+@media only screen and (max-width:355px) {
+    .clock p:first-child {
+        font-size: 60px;
+    }
+
+    #hour span {
+        width: 72px;
+    }
+
+    .timers .clock {
+        font-size: 18px;
+    }
+
+    #date {
+        padding-left: 12px;
+    }
+}
+
+@media only screen and (max-width:340px) {
+    #stopWcount span {
+        width: 70px;
+    }
+
+    .stopwatch div {
+        font-size: 40px;
+    }
+
+    #timerCount span {
+        width: 70px;
+    }
+
+    .timer {
+        font-size: 40px;
+    }
+}
