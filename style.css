@@ -53,7 +53,7 @@
 
 
 .bg-img1 {
-    background-image: url(geranimo-a2zdgkDzFo8-unsplash.jpg);
+    background-image: url(photo-1654749228183-55bf2b1d0644.avif);
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -347,6 +347,7 @@ button {
 
     body {
         height: 87vh;
+        overflow: hidden;
     }
 }
 
@@ -418,7 +419,8 @@ button {
 
     .timers .clock {
         font-size: 20px;
-        padding-left: 30px;
+        padding-left: 10px;
+        font-weight: 600;
     }
 
     .timers {
@@ -430,11 +432,11 @@ button {
     }
 
     #stopWcount span {
-        width: 90px;
+        width: 100px;
     }
 
     .stopwatch div {
-        font-size: 45px;
+        font-size: 55px;
     }
 
     .stopwatch {
@@ -442,11 +444,11 @@ button {
     }
 
     #timerCount span {
-        width: 90px;
+        width: 100px;
     }
 
     .timer {
-        font-size: 45px;
+        font-size: 55px;
         width: 100%;
     }
 
@@ -459,6 +461,8 @@ button {
         top: 20px;
         right: 75px;
     }
+
+
 }
 
 
